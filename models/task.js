@@ -22,6 +22,9 @@ const taskSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     required: true,
     ref: 'User'
+  },
+  attachment: {
+    type: String 
   }
 }, {
   timestamps: true 
